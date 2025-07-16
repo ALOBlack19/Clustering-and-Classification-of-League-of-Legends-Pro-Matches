@@ -188,3 +188,4 @@ Our project successfully reproduced the clustering and classification work and c
 
 ## 7. Licence
 This project is for academic use only and follows the licensing terms of the original paper and dataset.
+Citation: http://hdl.handle.net/10451/61680
