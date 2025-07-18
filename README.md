@@ -1,191 +1,60 @@
-# 🧠 League of Legends Pro Matches – Mid-Term ML Project (DS301)
+# Clustering and Classification of League of Legends Pro Matches
 
-## 📘 Project Overview
-This project reproduces and extends the methodology proposed in the research paper:
+This repository hosts a midterm project focused on analyzing League of Legends professional match data to uncover spatio-temporal patterns of jungle deaths. The project utilizes advanced data science techniques to provide strategic insights into competitive gameplay.
 
-**"Análise de Dados de Jogos Eletrônicos: Clusterização e Classificação no League of Legends"**  
-[📄 View PDF](https://github.com/Bambito9/Esports-Games-Data-Analysis/blob/main/Disserta%C3%A7%C3%A3o.pdf)
+## Project Objectives
 
-We use the dataset of **professional League of Legends matches (Patch 13.3)** to analyze player behavior through **K-Means clustering** and apply classification models to better understand roles, strategies, and patterns.
+Our primary goals for this project include:
 
----
+*   **Data Pipeline Development**: Building a robust system for extracting, cleaning, and preparing large-scale League of Legends match data.
+*   **Advanced Clustering**: Implementing K-Medoids and K-Means clustering to identify meaningful spatio-temporal patterns of jungle deaths.
+*   **Predictive Modeling**: Utilizing Random Forest for regression to predict continuous variables related to game outcomes or player performance.
+*   **Technical Analysis**: Interpreting clustering and regression results, including scatter plots, to derive actionable strategic insights.
 
-## 📁 Repository Structure
-```
-.
-├── data/
-│   └── Patch13_3_Professional.csv
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_kmeans_reproduction.ipynb
-│   ├── 03_contribution_experiments.ipynb
-├── src/
-│   └── utils.py
-├── README.md
-└── report/
-    └── MidTerm_Project_Report.pdf
-```
+## Key Accomplishments
 
----
+We have successfully:
 
-## 🔍 Objectives
-- Reproduce the clustering and classification methodology from the research paper.
-- Evaluate model performance using appropriate metrics.
-- Make at least two original contributions through experiments or alternate models.
+*   Acquired and preprocessed a substantial dataset of professional League of Legends matches.
+*   Implemented **K-Medoids and K-Means clustering**, optimizing parameters for spatio-temporal analysis and comparative evaluation.
+*   Determined optimal cluster numbers using silhouette analysis and the elbow method for both clustering algorithms.
+*   Applied **Random Forest for regression** to predict key game metrics based on analyzed patterns.
+*   Performed detailed technical analysis of clustering and regression outcomes, focusing on death locations, temporal patterns, and predictive accuracy.
+*   Documented our methodology and findings for reproducibility.
 
----
+## Technical Insights
 
-## 🧼 Data Preprocessing
-- Dataset: [Patch13_3/Professional](https://github.com/Bambito9/Esports-Games-Data-Analysis/tree/main/League%20of%20Legends/Datasets/Patch13_3/Professional)
-- Removed irrelevant columns, handled missing values
-- Created additional performance features (e.g., Gold per Minute, Kill Participation Rate)
-- Standardized numerical values for K-Means
+The K-Medoids clustering analysis revealed distinct spatio-temporal patterns in jungle deaths, with an optimal four-cluster solution consistently observed across different datasets (total, blue side, red side). This suggests four primary strategic scenarios for jungle deaths in professional play. The analysis highlighted:
 
----
+*   **Spatial Concentration**: Deaths are concentrated in specific jungle areas, indicating strategic importance.
+*   **Team-Specific Patterns**: Blue and red sides exhibit different spatial distributions due to map asymmetry.
+*   **Temporal Clustering**: Deaths cluster around critical game timestamps.
 
-## 🔁 Methodology Reproduction
-- Applied **K-Means clustering** on preprocessed features
-- Compared clusters using silhouette score and PCA visualization
-- Trained classifiers (e.g., Decision Tree, Random Forest) using cluster labels as targets
-- Matched methods from original paper
+Further analysis using **K-Means clustering** provided a comparative perspective on cluster formation and efficiency, while **Random Forest regression** offered insights into the predictive power of our features on game outcomes.
 
----
+## Future Work
 
-## 🚀 Contributions
+Potential improvements and extensions for this project include:
 
-### ✅ 1. Applied Methodology to a Similar Dataset
-- Used Solo Queue and other patches from the same GitHub repository
-- Compared clustering patterns and classification accuracy
-- Evaluated performance differences across match formats
+*   **Enhanced Feature Engineering**: Incorporating additional contextual features like champion types, specific in-game events (e.g., objective control, major team fights), and player roles to enrich the models.
+*   **Temporal Weighting**: Implementing time-decay functions to emphasize recent events in the analysis, allowing the models to adapt to evolving game meta and strategies.
+*   **Interactive Visualizations**: Developing dynamic and interactive tools for exploring clustering and regression results, enhancing interpretability and usability.
+*   **Integration with Game Simulation**: Integrating the findings with a game simulation environment to test and validate strategic recommendations derived from the analysis.
+*   **Broader Dataset Inclusion**: Expanding the dataset to include more professional matches from different patches and regions to identify broader trends and validate the generalizability of the findings.
 
-### ✅ 2. Experimented with Model Parameters
-- Ran K-Means with different values of `k` (3–10)
-- Applied elbow method and silhouette analysis to find optimal `k`
-- Tuned classification models (e.g., max depth for trees, number of estimators for RF)
+## Job Market Relevance
 
-### ⬜ 3. Tried Alternative Models *(optional)*
-- [Optional] Implemented XGBoost and SVM for classification
-- Compared precision, recall, and accuracy with models from the paper
+This project demonstrates skills highly relevant to the data professional job market, including data preprocessing, **K-Means and K-Medoids clustering**, **Random Forest regression**, spatio-temporal analysis, Python programming, and version control. These skills are in high demand across various industries, particularly with the rise of AI and Machine Learning.
 
----
+## References
 
-## 📊 Evaluation
-- Silhouette Score: XX (original), YY (after tuning)
-- Classification Accuracy: Baseline – XX%, Optimized – YY%
-- Improved interpretability and cluster consistency with better features and `k` tuning
+*   **Midterm Project Document**: [Midterm Project - Version July 18, 2025](Mid-termproject-July_18.pdf)
+*   **Jupyter Notebook**: [Clustering_K-Medoids_Jg-Spatio-temporal-deaths.ipynb](Clustering_K-Medoids_Jg-Spatio-temporal-deaths.ipynb)
+*   **Research Paper (Inspiration)**: [TM_Rui_Roque.pdf](TM_Rui_Roque.pdf)
+*   **GitHub Repository**: [ALOBlack19/Clustering-and-Classification-of-League-of-Legends-Pro-Matches](https://github.com/ALOBlack19/Clustering-and-Classification-of-League-of-Legends-Pro-Matches)
+*   **Original Research Paper (Rui Roque)**: [https://repositorio.ulisboa.pt/handle/10451/61680?mode=simple](https://repositorio.ulisboa.pt/handle/10451/61680/1/TM_Rui_Roque.pdf)
+*   **Original Research Paper PDF**: [https://repositorio.ulisboa.pt/bitstream/10451/61680/1/TM_Rui_Roque.pdf](https://repositorio.ulisboa.pt/bitstream/10451/61680/1/TM_Rui_Roque.pdf)
+*   **Related GitHub Repository**: [Bambito9/Esports-Games-Data-Analysis](https://github.com/Bambito9/Esports-Games-Data-Analysis)
+*   **GitHub Profile**: [Redck9](https://github.com/Redck9)
 
----
 
-## 📉 Challenges Faced
-- Some features mentioned in the paper were not clearly defined
-- Feature scaling required experimentation
-- Solo Queue data had different distributions compared to Pro data
-
----
-
-## 🧾 Conclusion
-- Successfully reproduced core methods from the original research
-- Our contributions improved cluster cohesion and classification accuracy
-- Learned to critically test and iterate on published ML methodologies
-
----
-
-## 👥 Team Members
-- Member 1 – [GitHub Profile](#)
-- Member 2 – [GitHub Profile](#)
-- Member 3 – [GitHub Profile](#)
-
----
-
-## 🛠️ Tech Stack
-- Python 3.10+
-- Jupyter Notebooks
-- pandas, NumPy
-- scikit-learn
-- matplotlib, seaborn
-- XGBoost (optional)
-
----
-
-## 🧪 How to Run
-```bash
-# Clone repo
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-# (Optional) Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or venv\Scriptsctivate on Windows
-pip install -r requirements.txt
-
-# Launch notebooks
-jupyter notebook
-```
-
----
-
-## 📄 License
-This project is for academic use only and follows the licensing terms of the original paper and dataset.
-
----
-
-# 📑 Project Report
-
-## Project Title
-**Clustering and Classification of Pro League of Legends Matches – Reproducing and Extending Esports Data Analysis**
-
----
-
-## 1. Introduction
-This project is based on the paper *"Análise de Dados de Jogos Eletrônicos"* (Bambito9). It explores esports match data using clustering and classification to reveal patterns among professional League of Legends players. We use the dataset from Patch 13.3 and focus on reproducibility and contribution.
-
----
-
-## 2. Methodology
-- **Dataset:** Patch13.3 Professional matches
-- **Preprocessing:** Cleaned data, removed irrelevant columns, standardized numeric features
-- **Feature Engineering:** Added custom performance metrics like Gold/Min, Vision Score/Min
-- **Reproduced Paper Steps:** Applied K-Means, visualized clusters with PCA, trained classifiers
-
----
-
-## 3. Contributions
-
-### A. New Dataset Testing
-- Applied same methodology to different patch and Solo Queue datasets
-- Found different clustering patterns
-- Showed lower classification performance on Solo Queue due to variability
-
-### B. Parameter Experimentation
-- Ran elbow and silhouette analysis to choose optimal `k`
-- Found `k = 5` gave better silhouette score than original `k = 4`
-- Improved Random Forest accuracy by tuning tree depth and estimators
-
-*(Optional)*  
-### C. Tried New Models
-- Tested Logistic Regression, SVM, and XGBoost
-- XGBoost slightly outperformed other models with better precision on some classes
-
----
-
-## 4. Results & Evaluation
-- Best Silhouette Score: 0.38 with `k=5`
-- Best Classification Accuracy: 87% (Random Forest after tuning)
-- XGBoost: Precision = 0.91, Recall = 0.86
-- Clear improvement over baseline from paper (e.g., 75%–80% range)
-
----
-
-## 5. Challenges
-- Paper lacked full feature definitions
-- Tuning K-Means was computationally heavy
-- Class imbalance in some roles required additional care
-
----
-
-## 6. Conclusion
-Our project successfully reproduced the clustering and classification work and contributed improvements through parameter optimization and dataset generalization. The methods proved adaptable to other match types, and our model tuning led to more reliable predictions and better insight into player behavior.
-
-## 7. Licence
-This project is for academic use only and follows the licensing terms of the original paper and dataset.
-Citation: http://hdl.handle.net/10451/61680
