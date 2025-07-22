@@ -56,5 +56,3 @@ This project demonstrates skills highly relevant to the data professional job ma
 *   **Original Research Paper PDF**: [https://repositorio.ulisboa.pt/bitstream/10451/61680/1/TM_Rui_Roque.pdf](https://repositorio.ulisboa.pt/bitstream/10451/61680/1/TM_Rui_Roque.pdf)
 *   **Related GitHub Repository**: [Bambito9/Esports-Games-Data-Analysis](https://github.com/Bambito9/Esports-Games-Data-Analysis)
 *   **GitHub Profile**: [Redck9](https://github.com/Redck9)
-
-
