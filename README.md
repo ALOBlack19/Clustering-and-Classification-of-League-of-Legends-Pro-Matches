@@ -8,7 +8,7 @@ Our primary goals for this project include:
 
 *   **Data Pipeline Development**: Building a robust system for extracting, cleaning, and preparing large-scale League of Legends match data.
 *   **Advanced Clustering**: Implementing K-Medoids and K-Means clustering to identify meaningful spatio-temporal patterns of jungle deaths.
-*   **Predictive Modeling**: Utilizing Random Forest for regression to predict continuous variables related to game outcomes or player performance.
+*   **Predictive Modelling**: Utilizing Random Forest for regression to predict continuous variables related to game outcomes or player performance.
 *   **Technical Analysis**: Interpreting clustering and regression results, including scatter plots, to derive actionable strategic insights.
 
 ## Key Accomplishments
@@ -48,11 +48,6 @@ This project demonstrates skills highly relevant to the data professional job ma
 
 ## References
 
-*   **Midterm Project Document**: [Midterm Project - Version July 18, 2025](Mid-termproject-July_18.pdf)
-*   **Jupyter Notebook**: [Clustering_K-Medoids_Jg-Spatio-temporal-deaths.ipynb](Clustering_K-Medoids_Jg-Spatio-temporal-deaths.ipynb)
-*   **Research Paper (Inspiration)**: [TM_Rui_Roque.pdf](TM_Rui_Roque.pdf)
-*   **GitHub Repository**: [ALOBlack19/Clustering-and-Classification-of-League-of-Legends-Pro-Matches](https://github.com/ALOBlack19/Clustering-and-Classification-of-League-of-Legends-Pro-Matches)
-*   **Original Research Paper (Rui Roque)**: [https://repositorio.ulisboa.pt/handle/10451/61680?mode=simple](https://repositorio.ulisboa.pt/handle/10451/61680/1/TM_Rui_Roque.pdf)
-*   **Original Research Paper PDF**: [https://repositorio.ulisboa.pt/bitstream/10451/61680/1/TM_Rui_Roque.pdf](https://repositorio.ulisboa.pt/bitstream/10451/61680/1/TM_Rui_Roque.pdf)
+*   **Original Research Paper (Rui Roque)**: [https://repositorio.ulisboa.pt/handle/10451/61680?mode=simple](https://repositorio.ulisboa.pt/handle/10451/61680?mode=simple)
 *   **Related GitHub Repository**: [Bambito9/Esports-Games-Data-Analysis](https://github.com/Bambito9/Esports-Games-Data-Analysis)
-*   **GitHub Profile**: [Redck9](https://github.com/Redck9)
+*   **Author GitHub Profile**: [Redck9](https://github.com/Redck9)
